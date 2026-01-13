@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kurukshetra Enterprise Cards</title>
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header / Intro Section */
+  .intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto 40px auto;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .intro h1 {
+    font-size: 1.8em;
+    color: #283e51;
+    margin-bottom: 15px;
+  }
+
+  .intro p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Cards Row */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+  }
+
+  .card {
+    width: 270px;
+    height: 380px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .card .front, .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+
+  /* Card Front */
+  .card .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    flex-direction: column;
+  }
+
+  .card .front span {
+    display: block;
+    font-size: 0.9em;
+    margin-top: 5px;
+    font-weight: normal;
+  }
+
+  /* Individual card colors */
+  .front-1 { background-color: #4A90E2; }
+  .front-2 { background-color: #50E3C2; }
+  .front-3 { background-color: #F5A623; }
+  .front-4 { background-color: #9013FE; }
+  .front-5 { background-color: #D0021B; }
+
+  /* Card Back */
+  .card .back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<!-- Intro Section -->
+<div class="intro">
+  <h1>Drawing Enterprise Parallels from the Kurukshetra Battlefield</h1>
+  <p>
+    The battle of Kurukshetra between the Pandavas and Kauravas offers many insights on strategy, leadership and execution. Here are a few parallels from the battlefield that seem relevant in today’s enterprise context.
+  </p>
+</div>
+
+<!-- Cards Row -->
+<div class="card-container">
+  <!-- Card 1 -->
+  <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="front front-1">
+      THE STRATEGIC PERSPECTIVE LAYER
+      <span>(THE “KRISHNA” LAYER)</span>
+    </div>
+    <div class="back">
+      When given the choice, Arjun chose Krishna over the Narayani Sena (a massive army). Krishna participated in the war as a non-combatant, steering the chariot but holding no weapons. He was the only one on the field not locked in a specific duel. This Operational Detachment allowed him to see the entire battlefield from a macro-level, identifying threats and opportunities that the warriors, who were "in the dust" of the fight, simply could not see.<br><br>
+      <strong>Enterprise Parallel:</strong><br> High-stakes execution requires this layer of strategic leadership that is deliberately uncluttered by daily operations and delivery KPIs.
+In many larger organizations, leaders are trapped in "Warrior-Manager" mode. They are so heavily embedded in the Performance Zone / Productivity Zone (hitting targets)- delivery, efficiency and near-term outcomes. While necessary, sustained immersion here increases the risk of <b><i>executive myopia</i></b>, where external signals and strategic inflection points often go unnoticed. <br>High-performing enterprises address this by creating a Strategic Perspective Layer - whether it’s a Strategy Office or a dedicated Consultant -whose KPI is to maintain a 360-degree view of the external market and signal pivots. <br><br>By structurally separating Execution from Navigation, we ensure that the organization doesn't just "fight hard," but "fights right," detecting market shifts and logical traps before the operational engine incurs damage.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="front front-2">
+      STRATEGIC CAPABILITY >> CAPACITY
+      <span>(THE “7 VS 11” EFFECT)</span>
+    </div>
+    <div class="back">
+      The Pandavas had 7 Akshauhinis (military divisions), while the Kauravas had 11. On paper, they were outnumbered, but Krishna’s strategy ensured that CAPABILITY (not volume) decided outcomes. The right assets were deployed at decisive moments (ex- Ghatotkacha rendering Karna’s most powerful weapon ineffective), neutralizing numerical superiority.<br><br>
+      <strong>Enterprise Parallel:</strong><br> This reflects a <b><i>“Strategy-first, Scale-second”</i></b> principle. Success is not about raw headcount. What matters is strategic roles and future-aligned capabilities. While Delivery and capacity matter, without strategic alignment, scale becomes a liability. <p>Enterprise vendor ecosystems reflect similar patterns, where vendors are often added incrementally - sometimes to fill capability gaps, sometimes for speed, or due to convenience and relationships. Over time, this leads to a fragmented vendor landscape, with distributed knowledge that is not consolidated, creating inefficiencies and future risk.</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="front front-3">
+      ALIGNMENT & TRUST AS EXECUTION MULTIPLIERS
+      <span></span>
+    </div>
+    <div class="back">
+       Several Kaurava alliances were structurally strong but relationally weak. For example, Shalya, the Madra king, was coerced into joining the Kauravas and was made Karna’s charioteer. The lack of voluntary alignment showed up on the battlefield, where Shalya consistently demotivated Karna and disrupted his focus mid-battle. Similar tension existed between Bhishma and Karna. Despite formidable individual capabilities, the partnerships failed because the foundation of trust and mutual respect were missing. This friction at the "peer-leader" level proved more damaging than the enemy’s arrows.<br><br>
+      <strong>Enterprise Parallel:</strong> <br>Strong collaboration is not optional; it is a mechanical requirement for speed and effective execution. In enterprise settings, forced mandates or weak peer-level trust introduces a <b><i>“Trust Tax”</i></b>, invisible friction that slows decisions, weakens coordination and erodes execution velocity. <br><br>
+Initiatives meant to strengthen alignment, trust and cohesion should be treated as operational upkeep, not discretionary or symbolic activities. Just as a software app requires a clean code to run effectively, organizations require <b>high-trust “API connections”</b>, especially between peer leaders and between leaders & employees to operate at scale. 
+
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="front front-4">
+      THE LOGIC SHIELD
+      <span>(DEFENSIVE PLAY – ZONE TO WIN)</span>
+    </div>
+    <div class="back">
+      Both sides possessed powerful “high-tech missiles” (Astras), with the Kauravas holding a slight edge. The Pandavas, however, (as directed by Krishna) did not try to overpower every strength of the Kauravas. Instead, they focused on neutralizing key threats at critical moments. Effectiveness depended on timing, coordination and restraint.<br><br>
+      <strong>Enterprise Parallel:</strong><br> Advantage does not always come from disruption. In certain phases, the smarter move is <b><i>Neutralize → Optimize → Differentiate</i></b>. Competitive advantage is sometimes achieved by reducing the opponent’s effectiveness rather than out-performing them everywhere.
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="front front-5">
+      VYUHA THINKING
+      <span>(STRUCTURED & ADAPTIVE OPERATING MODELS)</span>
+    </div>
+    <div class="back">
+      During the Kurukshetra war, both sides used complex vyuha formations. Each vyuha had a clear structure, defined roles and rules of engagement. Some were deliberately difficult to penetrate, even for capable warriors. At the same time, the formations were adaptive based on battlefield conditions. The structure remained strong, but the configuration adapted.<br><br>
+      <strong>Enterprise Parallel:</strong><br>  
+A high-performing organization operates like a well-designed vyuha. An effective operating model must be strong by design- robust yet agile- with clear governance, decision rights and accountability, while still allowing controlled adaptation to changing conditions (market shifts, technology, strategy pivots).<br><br>
+Designing a flexible and strong operating model upfront is as important as investing in talent. When operating models are under-designed or reactive, organizations either become too rigid to respond or too loose to control. Thoughtful design amplifies every leader’s and team’s impact, ensuring consistent execution in dynamic environments.
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
