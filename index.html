@@ -12,12 +12,11 @@
     padding: 0;
   }
 
-  /* Header / Intro Section */
   .intro {
     text-align: center;
     max-width: 900px;
-    margin: 40px auto 40px auto;
-    font-family: 'Segoe UI', sans-serif;
+    margin: 40px auto;
+    padding: 0 16px;
   }
 
   .intro h1 {
@@ -32,14 +31,27 @@
     line-height: 1.6;
   }
 
-  /* Cards Row */
+  /* Cards container */
   .card-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 16px;
     overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* IMPORTANT FIX: align left on mobile */
+  @media (max-width: 768px) {
+    .card-container {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .card-container {
+      justify-content: center;
+    }
   }
 
   .card {
@@ -59,7 +71,8 @@
     transform: rotateY(180deg);
   }
 
-  .card .front, .card .back {
+  .card .front,
+  .card .back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -70,7 +83,6 @@
     overflow-y: auto;
   }
 
-  /* Card Front */
   .card .front {
     display: flex;
     justify-content: center;
@@ -86,18 +98,16 @@
   .card .front span {
     display: block;
     font-size: 0.9em;
-    margin-top: 5px;
+    margin-top: 6px;
     font-weight: normal;
   }
 
-  /* Individual card colors */
   .front-1 { background-color: #4A90E2; }
   .front-2 { background-color: #50E3C2; }
   .front-3 { background-color: #F5A623; }
   .front-4 { background-color: #9013FE; }
   .front-5 { background-color: #D0021B; }
 
-  /* Card Back */
   .card .back {
     background-color: #fff;
     color: #333;
@@ -191,4 +201,5 @@ Designing a flexible and strong operating model upfront is as important as inves
 
 </body>
 </html>
+
 
